@@ -6,7 +6,7 @@ A single-player Pong-style game running on an ESP32-S3, rendered directly to a V
 
 ![Game running on a VGA monitor](docs/demo.jpeg)
 
-[Watch the demo video](docs/demo.mp4)
+[Watch the demo video](docs/demo.mp4) · [Watch on YouTube](https://youtu.be/QY0X-bdAKbE)
 
 ## Hardware
 
@@ -48,7 +48,6 @@ PingPong/
 ├── player.h / player.cpp Player class: wraps a Paddle + score tracking
 ├── docs/
 │   ├── demo.jpeg         Photo of the game running on a VGA monitor
-│   ├── demo.mp4          Short demo video
 │   └── wiring.jpeg       Photo of the wiring / circuit
 ├── README.md
 ├── LICENSE
