@@ -4,7 +4,7 @@ A single-player Pong-style game running on an ESP32-S3, rendered directly to a V
 
 ## Demo
 
-![Game running on a VGA monitor](docs/photo.jpg)
+![Game running on a VGA monitor](docs/demo.jpeg)
 
 [Watch the demo video](docs/demo.mp4)
 
@@ -13,7 +13,7 @@ A single-player Pong-style game running on an ESP32-S3, rendered directly to a V
 - ESP32-S3 N16R8 (16MB Flash / 8MB PSRAM)
 - Standard VGA monitor + VGA cable (DE-15 connector)
 - 2x push buttons (paddle up / down)
-- Speaker (score/miss sound)
+- Passive buzzer or speaker (score/miss sound)
 - Resistors: 330Ω (RGB lines), 100Ω (Sync lines)
 
 ### Wiring
@@ -30,6 +30,8 @@ A single-player Pong-style game running on an ESP32-S3, rendered directly to a V
 | 1  | — | Button: paddle up (`INPUT_PULLUP`) | — |
 | 2  | — | Button: paddle down (`INPUT_PULLUP`) | — |
 
+![Wiring / circuit](docs/wiring.jpeg)
+
 ## Software
 
 - [Arduino IDE](https://www.arduino.cc/en/software) with ESP32 board support installed
@@ -45,8 +47,9 @@ PingPong/
 ├── paddle.h / paddle.cpp Paddle class: position, movement, drawing
 ├── player.h / player.cpp Player class: wraps a Paddle + score tracking
 ├── docs/
-│   ├── photo.jpg         Photo of the game running on a VGA monitor
-│   └── demo.mp4          Short demo video
+│   ├── demo.jpeg         Photo of the game running on a VGA monitor
+│   ├── demo.mp4          Short demo video
+│   └── wiring.jpeg       Photo of the wiring / circuit
 ├── README.md
 ├── LICENSE
 └── .gitignore
